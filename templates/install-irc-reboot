@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cmd="@reboot /home/$USER/.irc_startup.sh"
+
+(crontab -l 2>/dev/null | grep -v "$cmd"; echo "$cmd") | crontab -
+
+echo "IRC screen will be automatically started if the server reboots !"
+echo -e "Read more about \x1b[1mcrontab\x1b[0m to change this."

@@ -1,0 +1,9 @@
+Tu ne veux pas utiliser weechat ?
+Ca te fait chier de faire ./irc et pas d'utiliser tmux comme les vrais ?
+Tu veux savoir comment tout ça marche par derrière ?
+
+Il existe un script dans ta home, ".irc_startup" qui démarre une connexion à irc et une application en ligne de commande, weechat.
+
+Le tout tourne dans un terminal virtuel (screen), que tu peux ouvrir ou fermer à tout moment, tout en laissant irc connecté.
+
+Mais tu peux y mettre ce que tu veux, comme par exemple irssi dans tmux.

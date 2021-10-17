@@ -1,0 +1,4 @@
+if [ -e ~/.wecome ]
+then
+    cat ~/README
+fi

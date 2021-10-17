@@ -1,0 +1,12 @@
+Bienvenue sur applejack (irc.urlab.be).
+
+Ce serveur est le successeur de rarity.urlab.be
+Nous avons copié toutes tes données de rarity
+dans le dossier "migrated-from-rarity".
+
+Tu pourras donc y retrouver ton ancienne config irssi ou tes logs.
+N'hésite pas à contacter root@urlab.be si tu as un problème ;)
+
+Depuis la migration, nous t'avons configuré un weechat (à la place de irssi)
+qui se lance automatiquement. Si tu veux revenir à ton ancienne configuration,
+va lire README.advanced, ça devrait t'aider :)

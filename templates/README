@@ -1,0 +1,26 @@
+Bonjour à toi jeune hacker !
+
+Bienvenue sur le bouncer IRC de UrLab :)
+
+**Maintenant tu peux utiliser irc.urlab.be pour te connecter.**
+
+Pour avoir accès à IRC, il te suffit de taper une seule commande : "./irc"
+(sans les guillemets bien sur !)
+
+Quelques commandes utiles à taper dans IRC :
+    - "/wc" pour fermer une fenêtre
+    - "/q mon_chouette_ami" pour ouvrir une conversation avec mon_chouette_ami
+    - "/w 3" pour aller à la fenêtre 3
+    - "ctrl-n" pour aller à la fenêtre suivante
+    - "ctrl-p" pour aller à la fenêtre précédente
+    - "/j #un_super_chan" pour rejoindre un autre channel
+
+Tu veux que ta connexion IRC soit relancée à chaque redémarage du
+serveur ? Utilise la commande install-irc-reboot.
+
+Tu avais déjà accès à l'ancien bouncer et tu te demandes ou sont tes fichiers
+et ou est ta belle config irssi toute brillante ?
+Va lire "MIGRATION" (en tapant "cat MIGRATION")
+
+Tu en as marre de voir ce message à chaque fois ? Tape "rm .welcome"
+Tu pourras relire ce message plus tard en tapant "cat README"
