@@ -37,6 +37,7 @@ content = template.render(username=username, nickname=nickname)
 write_file(f"/home/{username}/.weechat/irc.conf", content)
 
 template = env.get_template('relay.conf.j2')
+# relay_port: the range is thus 61k -> ~62k
 content = template.render(password=subprocess.check_output(['openssl', 'passwd', '16']).decode('UTF-8').rstrip(), relay_port=60000+getpwnam(username).pw_uid)
 write_file(f"/home/{username}/.weechat/relay.conf", content)
 
