@@ -12,7 +12,7 @@ def write_file(filename, content):
         except OSError as exc: # Guard against race condition
             if exc.errno != errno.EEXIST:
                 raise
-    with open(filename, "x") as f:
+    with open(filename, "w+") as f:
         f.write(content)
 
 username = str(input("username: "))
@@ -44,3 +44,5 @@ write_file(f"/home/{username}/.weechat/relay.conf", content)
 template = env.get_template('weechat.conf.j2')
 content = template.render(username=username, nickname=nickname)
 write_file(f"/home/{username}/.weechat/weechat.conf", content)
+
+subprocess.call(["sudo", "chown", f"{username}:{username}", "-R"])
