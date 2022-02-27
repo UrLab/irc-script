@@ -4,10 +4,10 @@ ssl_priorities = "NORMAL"
 username = "{{ username }}"
 
 [server]
-freenode.addresses = "chat.freenode.net/7000"
-freenode.autoconnect = on
-freenode.autojoin = "#urlab"
-freenode.nicks = "{{ nickname|default(username) }},{{ nickname|default(username) }}_, {{ nickname|default(username) }}1"
-freenode.realname = "{{ username }}"
-freenode.ssl = on
-freenode.username = "{{ username }}"
+libera.addresses = "irc.libera.chat/6667"
+libera.autoconnect = on
+libera.autojoin = "#urlab"
+libera.nicks = "{{ nickname|default(username) }},{{ nickname|default(username) }}_, {{ nickname|default(username) }}1"
+libera.realname = "{{ username }}"
+libera.ssl = on
+libera.username = "{{ username }}"
