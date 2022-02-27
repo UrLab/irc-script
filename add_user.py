@@ -45,4 +45,4 @@ template = env.get_template('weechat.conf.j2')
 content = template.render(username=username, nickname=nickname)
 write_file(f"/home/{username}/.weechat/weechat.conf", content)
 
-subprocess.call(["sudo", "chown", f"{username}:{username}", "-R"])
+subprocess.call(["sudo", "chown", f"{username}:{username}", "-R", f"/home/{username}/"])
