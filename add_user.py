@@ -23,7 +23,7 @@ subprocess.call(['sudo', 'adduser', username])
 env = Environment(
     loader=FileSystemLoader("templates"),
 )
-list_file = ["templates/relay_password.sh", "templates/irc.sh", "templates/.irc_startup.sh", "templates/README", "templates/README.advanced", "templates/MIGRATION", "templates/welcome"]
+list_file = ["templates/relay_password.sh", "templates/irc", "templates/.irc_startup.sh", "templates/README", "templates/README.advanced", "templates/MIGRATION", "templates/welcome"]
 
 for f in list_file:
     shutil.copy(f, f"/home/{username}/")
